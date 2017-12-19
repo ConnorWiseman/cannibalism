@@ -195,10 +195,10 @@ __A:__ Cannibalism relies on DFHack to automatically set the `dead_dwarf` flag o
 Alternatively, the remains of your fallen corpses may be too far away for the Charnel Pit to work with them. Consider placing a corpse stockpile closer to your workshop.
 
 __Q:__ _Will my dwarves return as ghosts if I butcher their corpses with the Charnel Pit?_ <br />
-__A:__ Yes. Because the reaction consumes the corpse of your fallen dwarves, if you want to lay them to rest after butchering their remains, you must build and engrave a slab to honor their memory. The Charnel Pit has a crafting option to craft slabs from dwarf bone blocks, if you wish to honor your fallen with a memorial constructed from bits and pieces of themselves.
+__A:__ Yes. Because the reaction consumes the corpse of your fallen dwarves, if you want to lay them to rest after butchering their remains, you must build and engrave a slab to honor their memory. The Ossuary has a crafting option to craft slabs from dwarf bone blocks, if you wish to honor your fallen with a memorial constructed from bits and pieces of themselves.
 
 __Q:__ _Why can't I build constructions with dwarf bone?_ <br />
-__A:__ Dwarf Fortress automatically marks any stone material you can craft blocks from as a reserved material. You must use the _Stone_ submenu of the _Status_ (<kbd>z</kbd>) menu to permit the use of dwarf bone.
+__A:__ Dwarf Fortress automatically marks any stone material you can craft blocks or large pots from as a reserved material. You must use the _Stone_ submenu of the _Status_ (<kbd>z</kbd>) menu to permit the use of dwarf bone.
 
 __Q:__ _How can I report a bug, request a feature, or ask a question?_ <br />
 __A:__ [Create a new issue](https://github.com/ConnorWiseman/cannibalism/issues/new) and apply the either `bug`, `feature request`, or `question` labels from the menu on the right.
