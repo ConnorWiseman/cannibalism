@@ -66,7 +66,7 @@ Check the [releases](https://github.com/ConnorWiseman/cannibalism/releases) page
 * Adds four new workshops, the __Charnel Pit__, __Dwarf Skull Totem__, __Ossuary__, and the __Altar to Armok__, all of which are detailed the sections below.
 * Adds a new material template type for __dwarf bone__.
 * Adds a new inorganic material type, __dwarf bone__, to enable crafting and construction with dwarf bone.
-    * Dwarf bone is a magma-safe economic material initially reserved for carving dwarf bone blocks.
+    * Dwarf bone is a magma-safe economic material initially reserved for carving dwarf bone blocks and large pots.
 * Adds two new inorganic material types for bestowing divine blessings or smiting the wicked, used in the reactions for the Altar to Armok workshop.
 * Adds a new plant type, __dwarf beard__, to enable crafting and decoration with dwarf beard.
     * Dwarf beard is never found growing in the wild, cannot be embarked with, and (hopefully) does not appear in trades.
@@ -77,7 +77,7 @@ Check the [releases](https://github.com/ConnorWiseman/cannibalism/releases) page
 
 A 5x5 workshop used to dismantle the dead. A worker with the _Butcher_ labor enabled can construct and use the Charnel Pit to butcher corpses belonging to anything, even his fellow dwarves. It is advised to place a corpse stockpile near any Charnel Pit you construct to optimize throughput.
 
-Butchering a corpse at a Charnel Pit always yields 1 stack of 15 meat from the creature butchered. Butchering a corpse at a Charnel Pit also the following materials regardless of the type of corpse butchered:
+Butchering a corpse at a Charnel Pit always yields 1 stack of 15 meat from the creature butchered. Butchering a corpse at a Charnel Pit also yields the following materials regardless of the type of corpse butchered:
 
 * 5-9 dwarf bone
 * 3-5 dwarf skin
@@ -128,7 +128,7 @@ Because _any_ dwarf can perform either of the functions provided by a Shrine to 
 Reaction             | Hotkeys                   | Description
 -------------------- | ------------------------- | -----------
 Conduct bloodletting | <kbd>a</kbd> <kbd>b</kbd> | Fills 1 large dwarven dwarf bone pot with blood; may kill the dwarf who performs the ceremony.
-Commune with Armok   | <kbd>a</kbd> <kbd>c</kbd> | Requires 1 large dwarve bone pot filled with dwarf blood; may bestow random boons on the faithful.
+Commune with Armok   | <kbd>a</kbd> <kbd>c</kbd> | Requires 1 large dwarven bone pot filled with dwarf blood; may bestow random boons on the faithful.
 
 Successful communion with Armok always bestows the following boons to faithful worshipers:
 
