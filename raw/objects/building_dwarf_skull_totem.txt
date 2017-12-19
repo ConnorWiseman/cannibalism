@@ -19,3 +19,4 @@ building_dwarf_skull_totem
   [TILE:3:1:135]
   [COLOR:3:1:7:0:1]
   [BUILD_ITEM:1:TOTEM:NO_SUBTYPE:CREATURE_MAT:DWARF:BONE]
+    [BUILDMAT]
