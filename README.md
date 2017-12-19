@@ -118,12 +118,6 @@ Carve mechanism | <kbd>a</kbd> <kbd>t</kbd> | Carves 1 dwarf bone block into 1 d
 Carve slab      | <kbd>a</kbd> <kbd>s</kbd> | Compresses 2 dwarf bone blocks into 1 dwarf bone slab.
 
 
-### Keratin Loom
-<kbd>b</kbd> <kbd>w</kbd> <kbd>Shift</kbd>+<kbd>l</kbd>
-
-A 3x3 workshop used to weave dwarf hair thread into dwarf hair cloth. A worker with the _Weaving_ labor enabled can construct the Keratin Loom from 2 dwarf bone blocks and use the workshop to automatically process nearby dwarf hair thread.
-
-
 ### Shrine to Armok
 <kbd>b</kbd> <kbd>w</kbd> <kbd>Shift</kbd>+<kbd>a</kbd>
 
