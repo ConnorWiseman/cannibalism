@@ -1,7 +1,7 @@
 # Cannibalism
 > A fairly macabre Dwarf Fortress mod.
 
-Adds the ability to butcher dwarf corpses, then craft objects, construct buildings, and perform cult rituals from their remains, to Fortress Mode. Why let perfectly good materials go to waste just because Urist McTenderflesh died of old age? Tested and working with Dwarf Fortress 0.43.05 and DFHack 0.43.05-r3.
+Adds the ability to butcher dwarf corpses, then craft objects, construct buildings, and perform cult rituals from their remains, to Fortress Mode. Why let perfectly good materials go to waste just because Urist McTenderflesh died of old age? Designed to be as plug-and-play as possible, requiring only two minor manual edits in `entity_default.txt`. Tested and working with Dwarf Fortress 0.43.05 and DFHack 0.43.05-r3.
 
 
 
@@ -14,9 +14,7 @@ Adds the ability to butcher dwarf corpses, then craft objects, construct buildin
     2. [Charnel Pit](#charnel-pit)
     3. [Dwarf Skull Totem](#dwarf-skull-totem)
     4. [Ossuary](#ossuary)
-    5. [Keratin Loom](#keratin-loom)
-    6. [Haircloth Workshop](#haircloth-workshop)
-    7. [Shrine to Armok](#shrine-to-armok)
+    5. [Shrine to Armok](#shrine-to-armok)
 4. [Known Issues](#known-issues)
 5. [FAQ](#faq)
 6. [License](#license)
@@ -31,7 +29,6 @@ Check the [releases](https://github.com/ConnorWiseman/cannibalism/releases) page
 
 
 ## Installation
-
 1. Manually modify `[ENTITY:MOUNTAIN]` in `<Dwarf Fortress>/raw/objects/entity_default.txt`.
     1. Permit killing, eating, and crafting trophies from the remains of sapient races:
     ```
@@ -55,17 +52,25 @@ Check the [releases](https://github.com/ConnorWiseman/cannibalism/releases) page
     [PERMITTED_REACTION:CARVE_DWARF_BONE_SLAB]
     [PERMITTED_REACTION:CARVE_DWARF_BONE_POT]
     [PERMITTED_REACTION:CARVE_DWARF_BONE_MECHANISM]
-    [PERMITTED_BUILDING:KERATIN_LOOM]
-    [PERMITTED_REACTION:WEAVE_DWARF_HAIR_CLOTH]
-    [PERMITTED_BUILDING:HAIRCLOTH_WORKSHOP]
     ```
 2. Merge the contents of `raw/` with `<Dwarf Fortress>/raw/`.
-3. Generate a new world with the updated raw files.
+3. Generate a new world with the modified raw files.
 
 
 
 
 ## Features
+
+### Overview
+* Uses DFHack to automatically clear the `dead_dwarf` flag from any of your fallen units, permitting the use of dwarf corpses in workshop reactions.
+* Adds four new workshops, the __Charnel Pit__, __Dwarf Skull Totem__, __Ossuary__, and the __Altar to Armok__, all of which are detailed the sections below.
+* Adds a new material template type for __dwarf bone__.
+* Adds a new inorganic material type, __dwarf bone__, to enable crafting and construction with dwarf bone.
+    * Dwarf bone is a magma-safe economic material initially reserved for carving dwarf bone blocks.
+* Adds two new inorganic material types for bestowing divine blessings or smiting the wicked, used in the reactions for the Altar to Armok workshop.
+* Adds a new plant type, __dwarf beard__, to enable crafting and decoration with dwarf beard.
+    * Dwarf beard is never found growing in the wild, cannot be embarked with, and (hopefully) does not appear in trades.
+
 
 ### Charnel Pit
 <kbd>b</kbd> <kbd>w</kbd> <kbd>Shift</kbd>+<kbd>c</kbd>
@@ -75,10 +80,12 @@ A 5x5 workshop used to dismantle the dead. A worker with the _Butcher_ labor ena
 Butchering a corpse at a Charnel Pit always yields 1 stack of 15 meat from the creature butchered. Butchering a corpse at a Charnel Pit also the following materials regardless of the type of corpse butchered:
 
 * 5-9 dwarf bone
-* 3-5 dwarf skin leather
+* 3-5 dwarf skin
 * 1-3 dwarf fat
-* 1 dwarf hair thread [35000]
+* 1 dwarven beard thread [35000]
 * 1 totem
+
+Dwarf skin is compatible with the vanilla _Leather Works_ workshop. Dwarven beard thread is compatible with the vanilla _Loom_ workshop, and derived materials are compatible with the vanilla _Clothier's Shop_ workshop.
 
 Reaction       | Hotkeys                   | Description
 -------------- | ------------------------- | -----------
@@ -95,7 +102,7 @@ Dwarves may polish or smear dwarf blood on any specified totem to gain a little 
 Reaction     | Hotkeys                   | Description
 ------------ | ------------------------- | -----------
 Polish totem | <kbd>a</kbd> <kbd>p</kbd> | Polishes the totem.
-Smear blood  | <kbd>a</kbd> <kbd>s</kbd> | Requires 1 large dwarven bone pot containing blood. Smears a little dwarf blood on the totem.
+Smear blood  | <kbd>a</kbd> <kbd>s</kbd> | Requires 1 large dwarven bone pot containing dwarf blood.
 
 
 ### Ossuary
@@ -115,12 +122,6 @@ Carve slab      | <kbd>a</kbd> <kbd>s</kbd> | Compresses 2 dwarf bone blocks int
 <kbd>b</kbd> <kbd>w</kbd> <kbd>Shift</kbd>+<kbd>l</kbd>
 
 A 3x3 workshop used to weave dwarf hair thread into dwarf hair cloth. A worker with the _Weaving_ labor enabled can construct the Keratin Loom from 2 dwarf bone blocks and use the workshop to automatically process nearby dwarf hair thread.
-
-
-### Haircloth Workshop
-<kbd>b</kbd> <kbd>w</kbd> <kbd>Shift</kbd>+<kbd>l</kbd>
-
-A 3x3 workshop used to process woven dwarf hair cloth. A worker with the _Clothesmaking_ labor enabled can construct the Hairclot Workshop from 2 dwarf bone blocks and use the workshop to manufacture clothing fashioned from dwarf hair.
 
 
 ### Shrine to Armok
@@ -166,7 +167,6 @@ VIOLENT+5         | 10%
 
 
 ## Known Issues
-
 * There is no known way to limit `CORPSE` reagents to a specific creature type. Trial and error has also revealed that there is no way to use a corpse's base material type (except for `MEAT`, oddly enough) for the product of a reaction. The Charnel Pit will therefore happily butcher _any_ corpse, miraculously and mysteriously transforming its remains (except for its meat) into the dwarven equivalent.
 * Some item types like bone, skulls, hair, and skin have no equivalent or functional item token (attempts to use `CORPSEPIECE` will crash Dwarf Fortress) and cannot be produced directly as the product of a reaction that keeps the resulting product true to the source creature and not, specifically, to the source creature's corpse. Where possible, the next best thing has been included as an alternative for each of these.
 * It's not possible to define custom item classes, so there is no way to make buildable dwarf skull totems short of defining an entire workshop to mimic the process.
@@ -175,11 +175,11 @@ VIOLENT+5         | 10%
     * As a workaround to the above, one can _Smear blood_ on a single Dwarf Skull Totem repeatedly and then deconstruct the target workshop to produce a lovely red mess on surrounding tiles. Workshops built on pools of blood will clean the tile beneath them, however.
 * The boiling stone method of delivering inhalable symptoms is unreliable, as dwarves performing reactions in any given workshop may occasionally not be breathing or manage to hold their breath through the resulting cloud of symptom-infused vapor.
     * Unfortunate passersby, including wandering animals, may also be caught up in any syndrome vapor cloud.
-* Thread manufactured from animal hair may not be used in the manufacture of cloth; cloth made from animal hair thread may not be used in the manufacture of clothing or other goods.
+* Thread manufactured from animal hair may be used to suture wounds, but it may not be used in the manufacture of cloth; cloth made from animal hair thread may not be used in the manufacture of clothing or other goods.
+  * Thread manufactured specifically from dwarf hair and (presumably) the hair of any sentient will not match any stockpile options and is, therefore, impossible to stockpile.
 
 
 ## FAQ
-
 __Q:__ _Is Cannibalism compatible with other mods?_ <br />
 __A:__ In theory? Yes. In practice? Absolutely no idea.
 
@@ -213,5 +213,4 @@ __A:__ [Create a new issue](https://github.com/ConnorWiseman/cannibalism/issues/
 
 
 ## License
-
 Cannibalism is licensed under [the MIT license](https://github.com/ConnorWiseman/cannibalism/blob/master/LICENSE).
