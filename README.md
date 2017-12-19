@@ -170,7 +170,7 @@ VIOLENT+5         | 10%
 * The boiling stone method of delivering inhalable symptoms is unreliable, as dwarves performing reactions in any given workshop may occasionally not be breathing or manage to hold their breath through the resulting cloud of symptom-infused vapor.
     * Unfortunate passersby, including wandering animals, may also be caught up in any syndrome vapor cloud.
 * Thread manufactured from animal hair may be used to suture wounds, but it may not be used in the manufacture of cloth; cloth made from animal hair thread may not be used in the manufacture of clothing or other goods.
-  * Thread manufactured specifically from dwarf hair and (presumably) the hair of any sentient will not match any stockpile options and is, therefore, impossible to stockpile.
+  * Thread manufactured specifically from dwarf hair and (presumably) the hair of any sapient will not match any stockpile options and is, therefore, impossible to stockpile.
 
 
 ## FAQ
