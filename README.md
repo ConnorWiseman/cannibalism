@@ -63,7 +63,7 @@ Check the [releases](https://github.com/ConnorWiseman/cannibalism/releases) page
 
 ### Overview
 * Uses DFHack to automatically clear the `dead_dwarf` flag from any of your fallen units, permitting the use of dwarf corpses in workshop reactions.
-* Adds four new workshops, the __Charnel Pit__, __Dwarf Skull Totem__, __Ossuary__, and the __Altar to Armok__, all of which are detailed the sections below.
+* Adds four new workshops, the __Charnel Pit__, __Dwarf Skull Totem__, __Ossuary__, and the __Altar to Armok__, all of which are detailed in the sections below.
 * Adds a new material template type for __dwarf bone__.
 * Adds a new inorganic material type, __dwarf bone__, to enable crafting and construction with dwarf bone.
     * Dwarf bone is a magma-safe economic material initially reserved for carving dwarf bone blocks and large pots.
@@ -152,7 +152,6 @@ NO_PHYS_ATT_RUST  | 5%
 NOEXERT           | 5%
 NOFEAR            | 5%
 NONAUSEA          | 5%
-NOSTUN            | 5%
 NOSTUN            | 5%
 PEACE-5           | 10%
 POWER+5           | 10%
