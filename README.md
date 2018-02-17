@@ -1,7 +1,7 @@
 # Cannibalism
 > A fairly macabre Dwarf Fortress mod.
 
-Adds the ability to butcher dwarf corpses, then craft objects, construct buildings, and perform cult rituals from their remains, to Fortress Mode. Why let perfectly good materials go to waste just because Urist McTenderflesh died of old age? Designed to be as plug-and-play as possible, requiring only two minor manual edits in `entity_default.txt`. Tested and working with Dwarf Fortress 0.43.05 and DFHack 0.43.05-r3.
+Adds the ability to butcher dwarf corpses, then craft objects, construct buildings, and perform cult rituals from their remains, to Fortress Mode. Why let perfectly good materials go to waste just because Urist McTenderflesh died of old age? Designed to be as plug-and-play as possible, requiring only two minor manual edits in `entity_default.txt`. Tested and working with Dwarf Fortress 0.44.05 and DFHack 0.44.05-r1.
 
 
 
@@ -177,7 +177,7 @@ __Q:__ _Is Cannibalism compatible with other mods?_ <br />
 __A:__ In theory? Yes. In practice? Absolutely no idea.
 
 __Q:__ _Is Cannibalism compatible with <older version> of Dwarf Fortress?_ <br />
-__A:__ There are no plans to backport Cannibalism for older versions of Dwarf Fortress. Feel free to [fork the project](https://github.com/ConnorWiseman/cannibalism/tree/master#fork-destination-box) and modify it to suit your needs.
+__A:__ Dwarf Fortress 0.43.05 and DFHack 0.43.05-r3 are the oldest supported versions with confirmed support for Cannibalism. Feel free to [fork the project](https://github.com/ConnorWiseman/cannibalism/tree/master#fork-destination-box) and modify it to suit your needs.
 
 __Q:__ _Will Cannibalism support newer versions of Dwarf Fortress?_ <br />
 __A:__ Yes, with one caveat. As Tarn Adams patches whatever oddness caused civilized races to stop butchering their own dead, the dependency on DFHack may be dropped entirely.
