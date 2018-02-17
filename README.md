@@ -176,8 +176,8 @@ VIOLENT+5         | 10%
 __Q:__ _Is Cannibalism compatible with other mods?_ <br />
 __A:__ In theory? Yes. In practice? Absolutely no idea.
 
-__Q:__ _Is Cannibalism compatible with <older version> of Dwarf Fortress?_ <br />
-__A:__ Dwarf Fortress 0.43.05 and DFHack 0.43.05-r3 are the oldest supported versions with confirmed support for Cannibalism. Feel free to [fork the project](https://github.com/ConnorWiseman/cannibalism/tree/master#fork-destination-box) and modify it to suit your needs.
+__Q:__ _Is Cannibalism compatible with \<older version> of Dwarf Fortress?_ <br />
+__A:__ Dwarf Fortress 0.43.05 and DFHack 0.43.05-r3 are the oldest versions with that Cannibalism has been confirmed to work with. Feel free to [fork the project](https://github.com/ConnorWiseman/cannibalism/tree/master#fork-destination-box) and modify it to suit your needs.
 
 __Q:__ _Will Cannibalism support newer versions of Dwarf Fortress?_ <br />
 __A:__ Yes, with one caveat. As Tarn Adams patches whatever oddness caused civilized races to stop butchering their own dead, the dependency on DFHack may be dropped entirely.
